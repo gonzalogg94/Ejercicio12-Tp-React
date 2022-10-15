@@ -14,6 +14,9 @@ function App() {
       </div>
       <FormularioClima></FormularioClima>
     </Container>
+    <div className="justify-content-start text-white ps-1">
+      <p>By Gonzalo Gallardo</p>
+    </div>
     <Footer></Footer>
     </section>
   );
