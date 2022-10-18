@@ -7,19 +7,11 @@ import "./style.css"
 function App() {
   return (
     <section>
-    <Container>
-      <div className="text-center text-white">
-        <h1 className="display-4">Pronostico actualizado del clima</h1>
-        <hr />
-      </div>
-      <FormularioClima></FormularioClima>
+    <Container >
+    <FormularioClima></FormularioClima>
     </Container>
-    <div className="justify-content-start text-warning ps-1">
-      <p>By Gonzalo Gallardo</p>
-    </div>
     <Footer></Footer>
     </section>
   );
 }
-
 export default App;

@@ -1,3 +1,11 @@
 body{
     background-color: rgb(85, 83, 83);
 }
+#root{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.mainSection{
+    flex-grow: 1;
+}

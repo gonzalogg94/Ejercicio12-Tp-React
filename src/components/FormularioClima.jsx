@@ -37,37 +37,45 @@ const FormularioClima = () => {
   };
 
   return (
-    <Form onSubmit={handleSubmit} className="card p-4 text-bg-dark my-4">
-      <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Label>Pais</Form.Label>
-        <Form.Control
-          type="text"
-          placeholder="Ej: Argentina"
-          onChange={(e) => setPais(e.target.value)}
-          value={pais}
-          required
-        />
-      </Form.Group>
-      <Form.Group className="mb-3" controlId="formBasicPassword">
-        <Form.Label>Ciudad</Form.Label>
-        <Form.Control
-          type="text"
-          placeholder="Ej: Yerba buena "
-          onChange={(e) => setCiudad(e.target.value)}
-          value={ciudad}
-          required
-        />
-      </Form.Group>
-      <Button variant="warning" type="submit">
-        Obtener clima
-      </Button>
-      <ItemClima
-        ciudadAPI={ciudadAPI}
-        clima={clima}
-        temperatura={temperatura}
-        sys={sys}
-      ></ItemClima>
-    </Form>
+    <section className="mainSection pt-5">
+      <div className="text-center text-white">
+        <h1 className="display-4">Pronostico actualizado del clima</h1>
+        <hr />
+      </div>
+      <Form onSubmit={handleSubmit} className="card p-4 text-bg-dark my-4">
+        <Form.Group className="mb-3" controlId="formBasicEmail">
+          <Form.Label>Pais</Form.Label>
+          <Form.Control
+            type="text"
+            placeholder="Ej: Argentina"
+            onChange={(e) => setPais(e.target.value)}
+            value={pais}
+            required
+          />
+        </Form.Group>
+        <Form.Group className="mb-3" controlId="formBasicPassword">
+          <Form.Label>Ciudad</Form.Label>
+          <Form.Control
+            type="text"
+            placeholder="Ej: Yerba buena "
+            onChange={(e) => setCiudad(e.target.value)}
+            value={ciudad}
+            required
+          />
+        </Form.Group>
+        <Button variant="warning" type="submit">
+          Obtener clima
+        </Button>
+        <ItemClima
+          ciudadAPI={ciudadAPI}
+          clima={clima}
+          temperatura={temperatura}
+          sys={sys}
+        ></ItemClima>
+      </Form>
+      
+    </section>
+    
   );
 };
 
