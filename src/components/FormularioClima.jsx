@@ -37,7 +37,7 @@ const FormularioClima = () => {
   };
 
   return (
-    <section className="mainSection pt-5">
+    <section className="pt-5">
       <div className="text-center text-white">
         <h1 className="display-4">Pronostico actualizado del clima</h1>
         <hr />
