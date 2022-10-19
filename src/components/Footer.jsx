@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         <section>
         <div>
-      <p className="text-warning ps-2">By Gonzalo Gallardo</p>
+      <p className="text-warning ps-2">Autor: Gonzalo Gallardo</p>
     </div>
         <article className='bg-dark text-white text-center py-3'>
             <div>

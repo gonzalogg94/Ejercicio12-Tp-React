@@ -23,9 +23,6 @@ const ItemClima = ({ ciudadAPI, clima, temperatura, sys }) => {
                   <Card.Title className="display-6 text-center">
                     {temperatura.temp}°
                   </Card.Title>
-                  <Card.Subtitle className="text-center py-1">
-                    {clima.main}
-                  </Card.Subtitle>
                   <Card.Text className="text-center">
                     {clima.description}
                   </Card.Text>
